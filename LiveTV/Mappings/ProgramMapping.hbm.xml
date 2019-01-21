@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2" assembly = "LiveTV"
+   namespace = "LiveTV.Entities">
+
+  <class name = "Programs" table="Programs">
+
+    <id name = "ProgramID">
+      <generator class = "native"/>
+    </id>
+
+    <property name = "ChannelID" column = "ChannelID" type = "Int32"/>
+    <property name = "StartTime" column = "StartTime" type = "DateTime"/>
+    <property name = "StopTime" column = "StopTime" type = "DateTime"/>
+    <property name = "Title" column = "Title" type = "String"/>
+    <property name = "Desc" column = "&quot;Desc&quot;" type = "String"/>
+    <property name = "Category" column = "Category" type = "String"/>
+    <property name = "SubTitle" column = "SubTitle" type = "String"/>
+    
+  </class>
+
+</hibernate-mapping>
